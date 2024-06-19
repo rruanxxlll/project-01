@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>奇聞藝事</title>
+    <!-- 外部樣式 -->
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/ee702a177f.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- All CSS Files -->
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Icon Font -->
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/ionicons.min.css">
+    <link rel="stylesheet" href="./css/et-line.css">
+    <!-- Plugins css file -->
+    <link rel="stylesheet" href="./css/plugins.css">
+    <!-- Theme main style -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/template/minimal.css">
+    <!-- Modernizr JS -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Quicksand", sans-serif;
+            font-size: 62.5%;
+            font-size: 10px;
+        }
+
+        h2 {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="clearfix">
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./logo/logo.png">
+                    </a>
+                </div>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks clearfix">
+                        <li><a href="./works.html">藝術創作</a></li>
+                        <li><a href="./artists.html">藝術家</a></li>
+                        <li><a href="./news.html">奇聞藝事</a></li>
+                        <li><a href="./contact_us.html">聯絡我們</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+    </header>
+
+    <img src="./image/news/art_meet.jpg" class="w-100" alt="">
+    <!-- <div class="sticky-footer flex">
+
+        <h2 class="myH2">藝術家 Artists</h2>
+        <ul class="flex">
+            <li class="col-4 float-left">項目1</li>
+            <li class="col-4 float-left">項目2</li>
+            <li class="col-4 float-left">項目3</li>
+        </ul>
+
+
+    </div> -->
+    <div class="clemp-team-section section bg-gray pt-150 pb-120 sticky-footer">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="mp-section-title mp-section-title-2 text-center col-xs-12 mb-80" data-name="Artists">
+                    <h1>Artists</h1>
+                </div>
+
+                <div class="mp-single-team col-sm-4 col-xs-12 mb-30">
+                    <img src="./image/artists/artist_01.jpg" alt="">
+                    <h4>黃春華</h4>
+                    <span>華夏書畫協會理事</span>
+                    <div class="social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="mp-single-team col-sm-4 col-xs-12 mb-30">
+                    <img src="./image/artists/artist_02.jpg" alt="">
+                    <h4>羅碧霞</h4>
+                    <span>隨心畫會藝術家</span>
+                    <div class="social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="mp-single-team col-sm-4 col-xs-12 mb-30">
+                    <img src="./image/artists/artist_03.jpg" alt="">
+                    <h4>陳瑞芬</h4>
+                    <span>隨心畫會藝術家</span>
+                    <div class="social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./_js/nav.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+
+</body>
+<footer class="footer">
+    <ul class="social-icon">
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+                <ion-icon name="logo-youtube"></ion-icon>
+            </a></li>
+    </ul>
+    <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="./works.html">藝術創作</a></li>
+        <li class="menu__item"><a class="menu__link" href="./artists.html">藝術家</a></li>
+        <li class="menu__item"><a class="menu__link" href="./news.html">奇聞藝事</a></li>
+        <li class="menu__item"><a class="menu__link" href="./contact_us.html">聯絡我們</a></li>
+    </ul>
+    <p>&copy;2024 Elegant Gallery | All Rights Reserved</p>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!-- <footer> -->
+<!-- <p> -->
+<!-- &nbsp;HTML特殊字元 -->
+<!-- copyright &copy; Art-Studio. All rights reserved. -->
+<!-- </div> -->
+<!-- </p>
+</footer> -->
+
+
+</html>

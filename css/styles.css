@@ -1,0 +1,726 @@
+/* CSS註解 */
+/* 標籤選取器 */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-family: "Noto Serif TC", serif;
+}
+
+.noto-serif {
+    font-family: "Noto Serif TC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 類別選取器 class slector */
+.logo {
+    color: black;
+    text-decoration: none;
+    /*移除文字底線*/
+    font-size: 20px;
+    /*文字大小*/
+    font-family: Impact;
+    /*文字字型*/
+    letter-spacing: 0.3px;
+    /*文字字距*/
+
+}
+
+/* 主色 */
+.text-primary {
+    color: aliceblue;
+}
+
+.text-gray {
+    color: darkgray;
+}
+
+/* 主背景色 */
+.bg-primary {
+    background-color: rgb(255, 255, 255);
+}
+
+.bg-darkblue {
+    background-color: darkblue;
+}
+
+/*ID選取器 */
+/* 回到上方按鈕 */
+/* 行內元素 a,img,span,em,strong */
+#pagetop {
+    position: fixed;
+    /*固定定位*/
+    right: 20px;
+    /*右邊界*/
+    bottom: 20px;
+    /*下邊界*/
+    display: block;
+    background-color: #857f7f;
+    /*顯示為塊級元素*/
+    width: 40px;
+    /*寬度*/
+    height: 40px;
+    /*高度*/
+    text-align: center;
+    /*文字置中*/
+    line-height: 40px;
+    /*行高*/
+    color: aliceblue;
+    text-decoration: none;
+    /*移除底線*/
+    border-radius: 50%;
+    /*圓角*/
+}
+
+i {
+    color: red;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 222, 32);
+    margin: 0;
+}
+
+/* header{
+    background-color: blue;
+    width:50%;      寬度
+    height: 300px;  高度 
+    padding: 0 40px;  內邊界
+    margin: 40px;   外邊界 
+    /border-top: 5% solid rgb(219, 201, 199); 邊框:線條粗細 線條類型 顏色 */
+
+header {
+    border-color: #999595;
+    padding: 0px 40px;
+    /*上下 左右*/
+    border-top: 8px solid rgb(41, 40, 40);
+}
+
+h1 {
+    width: 20%;
+    line-height: 80px;
+    margin: 0;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+h1>a {
+    color: gold;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    display: inline-block;
+}
+
+h2 {
+    color: black;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    padding-bottom: 15px;
+    position: relative;
+  }
+h3:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 55px;
+    background-color: #111;
+  }
+
+nav {
+    width: 40%;
+    margin-right: 10%;
+}
+
+nav>ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+nav>ul>li {
+    width: 25%;
+    text-align: center;
+}
+
+nav>ul>li>a {
+    line-height: 80px;
+    background-color: #fff;
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 0px 10px;
+
+}
+
+nav>ul>li>a:hover {
+    color: antiquewhite;
+    background-color: dimgrey;
+}
+
+.social-icon {
+    width: 15%;
+}
+
+.social-icon>a {
+    line-height: 80px;
+    font-size: 20px;
+    color: #857f7f;
+    margin-left: 10px;
+}
+
+.container {
+    /* background-color: #fff; */
+    max-width: 1170px;
+    margin: auto;
+    padding-top: 20px;
+    /*塊級元素置中*/
+}
+
+.clearfix::after {
+    /*偽類編輯器*/
+    content: "";
+    clear: both;
+    display: block;
+    /*轉為塊級*/
+
+}
+
+.flex {
+    display: flex;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    /* width: 100px;
+    padding: 20px 0px 0px 20px; 上右下左
+    margin: 0px 20px 20px 0px;  邊框:線條粗細 線條類型 顏色
+    border: 5px solid rgb(219, 201, 199); */
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+}
+
+/* =========================================================== */
+/*                         欄位數                              */
+/* =========================================================== */
+/* 單欄 */
+.ocl-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+    padding: 10px;
+}
+
+.col-1 {
+    width: 8.333333333%;
+}
+
+.col-2 {
+    width: 16.66666667%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33333333%;
+}
+
+.col-5 {
+    width: 41.66666667%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33333333%;
+}
+
+.col-8 {
+    width: 66.66666667%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33333333%;
+}
+
+.col-11 {
+    width: 91.66666667%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* 當視窗小於767px時執行 start */
+@media (max-width:767px) {
+
+    .col-3,
+    .col-4 {
+        width: 50%;
+    }
+
+    .btn-order {
+        display: none;
+    }
+}
+
+/* 當視窗小於767px時執行 end */
+
+/* ===========================================================*/
+/*                         側邊欄                              */
+/* ========================================================== */
+.sidebar {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.sidebar a {
+    line-height: 40px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding-left: 10px;
+    /* border-left: 3px solid orange; */
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    /*字距*/
+    border-left: 5px solid white;
+}
+
+.sidebar a.active {
+    border-left: 3px solid #e63a00;
+}
+
+.sidebar a:hover {
+    background-color:#fff;
+}
+
+.sidebar a :hover {
+    border-left: 3px solid #5800e6;
+}
+
+/* ===========================================================*/
+/*                         商品                               */
+/* ========================================================== */
+.product img {
+    width: 100%;
+}
+
+.product {
+    width: 33.3333%;
+    padding: 10px;
+}
+
+.product a {
+    text-decoration: none;
+    color: black;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.bg-light {
+    background-color: #d0c9c9;
+    padding: 10px 0px;
+}
+
+.bg-texture {
+    background-image: url('../image/pattern.webp');
+}
+
+.bg-image {
+    background-image: url('');
+    background-attachment: fixed;
+    background-position: center;
+    line-height: 600px;
+    color: #000000;
+    font-size: 40px;
+    text-align: center;
+}
+
+.breadcrumb {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.breadcrumb a {
+    color: #d0c9c9;
+    text-decoration: none;
+}
+
+/*兄+弟 相鄰選取器*/
+.breadcrumb>li+li::before {
+    content: "\00a0/\00a0"
+        /*特殊字元查詢補空白鍵*/
+}
+
+/* ===========================================================*/
+/*                         表格                               */
+/* ========================================================== */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+th {
+    /* background-color: black; */
+    color: rgb(234, 213, 213);
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(221, 241, 241);
+}
+
+tr:hover {
+    background-color: aliceblue;
+}
+
+/* ===========================================================*/
+/*                         表單                              */
+/* ========================================================== */
+
+label {
+    font-weight: 900;
+    font-size: medium;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    border: 1px solid lightgrey;
+    /*邊框*/
+    margin-bottom: 20px;
+    /*下邊界*/
+    padding: 10px;
+    /*內邊界*/
+    margin-top: 8px;
+    /*上邊界*/
+    border-radius: 4px;
+    /*圓角樣式*/
+}
+
+input[type="submit"] {
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: #fff;
+    border-radius: 4px;
+    width: 100px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* margin-bottom 下邊界樣式*/
+.mb-1 {
+    margin-bottom: 10px;
+}
+
+.mb-2 {
+    margin-bottom: 20px;
+}
+
+.mb-3 {
+    margin-bottom: 30px;
+}
+
+.mb-4 {
+    margin-bottom: 40px;
+}
+
+.mb-5 {
+    margin-bottom: 50px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+iframe {
+    vertical-align: top;
+}
+
+.position-relative {
+    position: relative;
+    /*相對定位*/
+}
+
+.position-absolute {
+    position: absolute;
+    /*絕對定位*/
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+}
+
+.tag {
+    background-color: rgba(0, 0, 0, 0.151);
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    top: 0px;
+    /* left: 50%;
+    border-radius: 50%; */
+}
+
+*/ .position-sticky {
+    position: sticky;
+    top: 0px;
+}
+
+.position-fixed {
+    position: fixed;
+}
+
+.btn-order:hover {
+    width: 150px;
+    background-color: rgb(254, 243, 178);
+
+}
+
+.btn-order {
+    width: 120px;
+    line-height: 80px;
+    background-color: rgb(253, 253, 253);
+    right: 0;
+    top: 50%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-shadow: #999595;
+    transition: all 0.2s;
+    /*轉變屬性*/
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /*外陰影*/
+}
+
+.box-shadow {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.border-radius {
+    border-radius: 8px;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+/*溢出:隱藏*/
+.title {
+    padding: 0 10px;
+}
+
+/* ===========================================================*/
+/*                         影片                              */
+/* ========================================================== */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
